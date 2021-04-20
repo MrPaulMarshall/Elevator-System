@@ -1,4 +1,4 @@
-#Elevator System
+# Elevator System
 
 ---
 
@@ -13,13 +13,13 @@ Taka interpretacja problemu to niepełne odwzorowanie rzeczywistości,
 jednak uwzględnia istotę sprawy, czyli poruszające się niesynchronicznie
 windy oraz pasażerów chcących dostać się za ich pomocą na inne piętra.
 
-##Struktura projektu
+## Struktura projektu
 
 Zadanie można rozłożyć na dwie części:
 * komunikacja klientów z serwerem
 * sterowanie ruchem wind
 
-###Moduł komunikacji:
+### Moduł komunikacji:
 
 ***FloorClient***
 reprezentuje proces klienta, np. terminalu przy windach
@@ -49,7 +49,7 @@ to klasa reprezentująca wiadomości przesyłane pomiędzy klientami i serwerem
 - obowiązkowym polem jest w niej typ, np. **exit**, **pickup** albo **result**,
 - pozostałe pola są opcjonalne i zależą od typu, np. pole **number** w wiadomości typu **ID**.
   
-###Moduł sterowania windami:
+### Moduł sterowania windami:
 
 ***Elevator*** klasa reprezentująca windę
 
@@ -69,13 +69,13 @@ to klasa reprezentująca wiadomości przesyłane pomiędzy klientami i serwerem
 
 - (ID, ostatnio odwiedzone piętro, następne piętro, czy jest w ruchu).
   
-###Server
+### Server
 
 ***Server*** klasa na styku powyższych modułów, której proces jest
 odpowiedzialny za rozpoczęcie pracy systemu, wykorzystanie modułu sterowania
 windami do zaspokajania potrzeb pasażerów oraz zakończenie pracy systemu.
 
-##Uruchomienie projektu
+## Uruchomienie projektu
 
 Projekt należy zaimportować do jakiegoś środowiska, np. IntelliJ, załączyć
 do niego bibliotekę Lombok, po czym zbudować go.
