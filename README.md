@@ -1,7 +1,5 @@
 # Elevator System
 
----
-
 Uproszczony system do zarządzania windami w budynku.
 
 Na każdym piętrze budynku działa proces przyjmujący zgłoszenia pasażerów
